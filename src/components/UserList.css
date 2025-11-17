@@ -1,0 +1,64 @@
+.user-card {
+  background-color: #333;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #ffe789;
+}
+
+.user-email {
+  color: #a0d8f0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+form button {
+  max-width: 100px;
+  padding: 10px;
+  background-color: #dedede;
+  color: rgb(30, 30, 30);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #c0c0c0;
+}
+
+form label {
+  font-size: large;
+  margin-bottom: 5px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.username-field,
+.useremail-field {
+  display: flex;
+  flex-direction: column;
+}

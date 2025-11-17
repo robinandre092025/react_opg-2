@@ -17,7 +17,6 @@ export default function Cookie() {
         alt="Cookie"
         className="cookie-image"
       />
-      <h2>Click the Cookie!</h2>
       <h3 className="cookie-count">Cookies created: {count}</h3>
     </div>
   );

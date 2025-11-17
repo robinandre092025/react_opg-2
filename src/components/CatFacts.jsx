@@ -5,6 +5,9 @@ export default function CatFacts(props) {
   const [data, setData] = useState([]);
 
   function fetchCatFact(amount) {
+    // Easy way to show that its loading
+    setData([{ fact: "Loading..." }]);
+
     fetch(`https://catfact.ninja/facts?limit=${amount}`)
       .then((response) => {
         if (!response.ok) {
@@ -26,15 +29,11 @@ export default function CatFacts(props) {
 
   return (
     <>
-      <h2>Random Cat Facts!</h2>
-      <hr />
       <ul>
         {data.map((item, index) => (
-          <>
-            <li className="fact" key={index}>
-              {item.fact}
-            </li>
-          </>
+          <li className="fact" key={index}>
+            {item.fact}
+          </li>
         ))}
       </ul>
     </>
