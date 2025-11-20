@@ -1,5 +1,5 @@
-import cookie from "../assets/cookie.png";
-import cookieBg from "../assets/cookie-bg.png";
+import cookie from "../../public/cookie.png";
+import cookieBg from "../../public/cookie-bg.png";
 import "./Cookie.css";
 import { useState } from "react";
 
@@ -8,7 +8,11 @@ export default function Cookie() {
 
   return (
     <div className="cookie-container">
-      <img src={cookieBg} alt="Background shine for cookie" className="cookie-bg" />
+      <img
+        src={cookieBg}
+        alt="Background shine for cookie"
+        className="cookie-bg"
+      />
       <img
         onClick={() => {
           setCount(count + 1);
