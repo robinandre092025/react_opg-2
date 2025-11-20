@@ -1,5 +1,5 @@
-import cookie from "../../public/cookie.png";
-import cookieBg from "../../public/cookie-bg.png";
+import cookie from "/cookie.png";
+import cookieBg from "/cookie-bg.png";
 import "./Cookie.css";
 import { useState } from "react";
 
